@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>Edit | Page</title>
+</head>
+<body>
+	<form method="post">
+		<input type="hidden" name="id" value="<%=id%>">
+		<table border="2">
+			<tr>
+				<td>User Name</td>
+				<td><input type="text" name="username" value="<%=username%>"/></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="password" value="<%=password%>"/></td>
+			</tr>
+			 <tr>
+                    <td>Employer Name</td>
+                    <td>
+                        <input type="text" name="ename" value="<%=ename%>" />
+                    </td>
+                </tr>
+			
+			<tr>
+                    <td>Company Name</td>
+                    <td>
+                        <input type="text" name="cname" value="<%=cname%>" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cntact no</td>
+                    <td>
+                        <input type="text" name="cno" value="<%=conno%>" />
+                    </td>
+                </tr>
+                <tr>
+				<td></td>
+				<td><input type="submit" value="Save" /></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

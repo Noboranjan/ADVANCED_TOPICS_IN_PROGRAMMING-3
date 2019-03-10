@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Home | Page</title>
+        <script src="jquery-3.3.1.min.js"></script>
+        <script src="test.js"></script>
+    </head>
+    <body>
+       <center>
+        <h1>Welcome</h1>
+        <br/><br/><br/>
+        <input id="nam"/>
+        <button>Search</button>
+        <p id="result">
+            
+        </p>
+        <br/><br/><br/>
+        
+        <a href="/home/create">Create Employee</a> |
+        <a href="/logout">Log Out</a>
+        <br/><br/><br/>
+        
+        <table border="2">
+            <tr>
+                <th>Id</th>
+                <th>User Name</th>
+                <th>Password</th>
+                <th>employer name</th>
+                <th>company name</th>
+                <th>contact no</th>
+                <th>Operations</th>
+            </tr>
+            <% for(var i=0; i<userList.length;i++){%>
+            
+            <tr>
+                <td><%=userList[i].id%></td>
+                <td><%=userList[i].username%></td>
+                <td><%=userList[i].password%></td>
+                <td><%=userList[i].ename%></td>
+                <td><%=userList[i].cname%></td>
+                <td><%=userList[i].conno%></td>
+                <td>	<a href="/home/edit/<%=userList[i].id%>">Edit</a> |
+							<a href="/home/<%=userList[i].username%>">Delete</a>
+				</td>
+            </tr>
+            
+            <% } %>
+        </table>
+        </center>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Edit | Page</title>
+</head>
+<body>
+	<form method="post">
+		<input type="hidden" name="id" value="<%=id%>">
+		<table>
+			<tr>
+				<td>Company Name</td>
+				<td><input type="text" name="cname" value="<%=cname%>"/></td>
+			</tr
+			 <tr>
+                    <td>Job Title</td>
+                    <td>
+                        <input type="text" name="jt" value="<%=jobt%>" />
+                    </td>
+                </tr>
+			
+			<tr>
+                    <td>Job Location</td>
+                    <td>
+                        <input type="text" name="jl" value="<%=jobloc%>" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Salary</td>
+                    <td>
+                        <input type="text" name="sal" value="<%=salary%>" />
+                    </td>
+                </tr>
+                <tr>
+				<td></td>
+				<td><input type="submit" value="Save" /></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

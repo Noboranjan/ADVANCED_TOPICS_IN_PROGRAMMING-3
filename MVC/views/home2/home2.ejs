@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Home | Page</title>
+        <script src="jquery-3.3.1.min.js"></script>
+        <script src="test.js"></script>
+    </head>
+    <body>
+       <center>
+        <h1>Welcome</h1>
+        <br/><br/><br/>
+        <br/><br/><br/>
+        
+        <a href="/home2/job">Add job</a> |
+        <a href="/logout">Log Out</a>
+        <br/><br/><br/>
+        
+        <table border="2">
+            <tr>
+               <th>ID</th>
+                <th>Company Name</th>
+                <th>Job title</th>
+                <th>job Location</th>
+                <th>salary</th>
+                <th>Operations</th>
+            </tr>
+            <% for(var i=0; i<userList.length;i++){%>
+            
+            <tr>
+                <td><%=userList[i].id%></td>
+                <td><%=userList[i].cname%></td>
+                <td><%=userList[i].jobt%></td>
+                <td><%=userList[i].jobloc%></td>
+                <td><%=userList[i].salary%></td>
+                <td>	<a href="/home2/edit2/<%=userList[i].id%>">Edit</a> |
+							<a href="/home2/<%=userList[i].id%>">Delete</a>
+				</td>
+            </tr>
+            
+            <% } %>
+        </table>
+        </center>
+    </body>
+</html>
